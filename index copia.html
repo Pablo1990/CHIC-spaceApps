@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="themes/hola.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<!--<script src="nowjs/now.js"></script>
+ //    <script>
+ //      $(document).ready(function(){
+         
+ //        now.receiveMessage = function(name, message){
+ //          $("#incomingMessages").append("<div class='message'><span class='username'>" + name + ":</span> " + message + "</div>");
+ //          $("#incomingMessages").scrollTop($("#incomingMessages")[0].scrollHeight);
+ //        }
+         
+ //        $("#chatNameButton").click(function(){
+ //          var chatName = $("#chatNameText").val().trim();
+ //          if(chatName.length <= 0)
+ //            chatName = "unknown";
+ //          now.name = chatName;
+ //          $(location).attr('href',"#chatPage");
+ //        });
+         
+ //        $("#chatSendButton").click(function(){
+ //          now.distributeMessage($("#messageText").val());
+ //          $("#messageText").val("");
+ //        });
+         
+ //      });
+     </script>-->
+</head> 
+<body> 
+
+	<div data-role="page">
+
+		<div data-role="header">
+			<h1>Micro-site</h1>
+			<a href="#form" data-rel="popup" data-transition="fade">Login</a>
+		</div><!-- /header -->
+
+			<div data-role="content">
+				<iframe src="http://player.vimeo.com/video/41135183" width="49%" height="49%" seamless></iframe>
+				<iframe src="http://player.vimeo.com/video/41135183" width="20%" height="20%" seamless></iframe>
+				<iframe src="http://player.vimeo.com/video/41135183" width="20%" height="20%" seamless></iframe>
+				<br/>
+				<br/>
+				<div style="background-color:#CCDFF4; border-color:#d6d6d6; border-style:dashed; border-width: 1px;">
+					<text class="#chat" style="text:#fff;">
+						> Te gusta el pescado? <br/>
+						> Candy crush o frozen? <br/>
+						> Que experimentos haceis? <br/>
+					</text>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="text">Chat:</label>
+					<input type="text" name="text" id="writeText" value="" />
+				</div>	
+
+			</div><!-- /content -->
+
+			<div data-role = "footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div>
+			<div data-role="popup" id="form" class="ui-content" data-theme="a" data-overlay-theme="a">
+			<form name="sampleform" action="" method="post">
+				<label for="uname" class="ui-hidden-accessible">Username</label>
+				<input type="text" name="uname" id="uname" placeholder="username">
+				<label for="pword" class="ui-hidden-accessible">Password</label>
+				<input type="password" name="pword" id="pword" placeholder="password">
+				<input type="submit" name="loginSubmit" id="loginSubmit" value="login" data-theme="b" data-icon="arrow-r" data-iconpos="right">
+			</form>
+		</div>
+
+		</div><!-- /page -->
+
+		
+
+	</body>
+</html>
